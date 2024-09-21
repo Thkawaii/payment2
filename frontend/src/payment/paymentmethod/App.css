@@ -1,0 +1,388 @@
+.payment-wrapper {
+    padding: 10px;
+    background: #007bff; /* Light blue background */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Shadow for depth */
+    width: 600px; /* Let the width adjust automatically */
+    margin: 20px auto; /* Center the wrapper */
+    transition: padding 0.3s ease, border-radius 0.3s ease; /* Smooth transition */
+}
+
+/* Further adjustments for extra small screens */
+@media (max-width: 480px) {
+    .payment-wrapper {
+        padding: 15px;
+        border-radius: 8px; /* Reduce the rounding even more */
+    }
+}
+
+/* Overall container */
+.payment-container {
+    font-family: Arial, sans-serif;
+    max-width: 100%; /* Set to 100% of its parent container */
+    margin: 0 auto; /* Center the container */
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: padding 0.3s ease, border-radius 0.3s ease; /* Smooth transition */
+}
+
+/* Adjustments for tablet screens */
+@media (max-width: 768px) {
+    .payment-container {
+        padding: 15px; /* Reduce padding for smaller screens */
+        border-radius: 8px; /* Slightly reduce border-radius */
+    }
+}
+
+/* Further adjustments for mobile screens */
+@media (max-width: 480px) {
+    .payment-container {
+        padding: 10px; /* Further reduce padding for small screens */
+        border-radius: 6px; /* Reduce the rounding more */
+    }
+}
+
+  
+  h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Show options button */
+  .show-options {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .show-options:hover {
+    background: #0056b3;
+  }
+  
+  .payment-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    gap: 12px; /* Space between payment options */
+  }
+  
+  .payment-options label {
+    display: flex;
+    align-items: center;
+    background-color: #0085FF; /* Blue background color */
+    color: white; /* White text color */
+    padding: 12px; /* Padding around text */
+    border-radius: 8px; /* Rounded corners for the background */
+    border: 1px solid #0077CC; /* Optional border to define the edges */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    width: 300px; /* Fixed width for each payment option */
+    box-sizing: border-box; /* Ensures padding and border are included in the width */
+    text-align: center; /* Center text within each label */
+  }
+  
+  .payment-options input[type="radio"] {
+    margin-right: 10px; /* Space between radio button and text */
+  }
+  
+  
+  
+  /* Payment display */
+  .payment-display {
+    margin-bottom: 20px;
+  }
+  
+  /* QR Code section */
+  .qr-code-section {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .qr-code {
+    max-width: 400px; /* ขนาดสูงสุดของรูป QR Code */
+    border: 2px solid #000000; /* ขอบของกรอบ */
+    border-radius: 10px; /* มุมกรอบโค้ง */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* เงาเบาๆ */
+    margin-bottom: 20px; /* ระยะห่างระหว่างรูป QR กับข้อความธนาคาร */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* เพิ่มการเปลี่ยนแปลงแบบเรียบ */
+    
+  }
+  
+  .qr-code:hover {
+    transform: scale(1.05); /* ขยายขนาดรูป QR Code เมื่อโฮเวอร์ */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* เพิ่มความเข้มของเงา */
+  }
+  
+  .bank-logos {
+    display: flex; /* Display logos side by side */
+    justify-content: center; /* Center the logos horizontally */
+    align-items: center; /* Align the logos vertically */
+    gap: 20px; /* Add space between the logos */
+    margin-top: 20px; /* Add margin on top of the logo section */
+  }
+  
+  .bank-logos img {
+    width: 100px; /* Set a fixed width for the logos */
+    height: auto; /* Ensure the logo keeps its aspect ratio */
+    transition: transform 0.3s ease; /* Add a hover animation effect */
+  }
+  
+  .bank-logos img:hover {
+    transform: scale(1.1); /* Slightly enlarge the logo when hovered */
+  }
+  
+  
+  
+  .credit-card-section {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 8px;
+    background: #007bff; /* Light blue background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 15px auto; /* Center the section horizontally */
+    width: 400px; /* Fixed width */
+    max-width: 100%; /* Ensure it doesn't exceed the parent width */
+    transition: padding 0.3s ease, border-radius 0.3s ease; /* Smooth transitions */
+}
+
+
+.credit-card-image-wrapper {
+    border: 2px solid rgb(255, 255, 255); /* White border around the image */
+    border-radius: 8px; /* Rounded corners */
+    padding: 5px; /* Space between the image and the border */
+    display: inline-block; /* Keeps the image inline */
+    background-color: rgb(255, 255, 255); /* White background for contrast */
+    width: auto; /* Auto-adjust width based on image */
+    max-width: 100%; /* Ensure it doesn't exceed the container */
+    transition: padding 0.3s ease, border-radius 0.3s ease; /* Smooth transitions */
+}
+
+/* Adjustments for tablet screens */
+@media (max-width: 768px) {
+    .credit-card-section {
+        padding: 10px; /* Reduce padding for smaller screens */
+        border-radius: 4px; /* Slightly reduce the rounded corners */
+    }
+
+    .credit-card-image-wrapper {
+        padding: 4px; /* Reduce padding for the image wrapper */
+        border-radius: 6px; /* Slightly reduce the rounded corners */
+    }
+}
+
+/* Adjustments for mobile screens */
+@media (max-width: 480px) {
+    .credit-card-section {
+        padding: 8px; /* Further reduce padding for small screens */
+        border-radius: 3px; /* Reduce the rounding further */
+    }
+
+    .credit-card-image-wrapper {
+        padding: 3px; /* Further reduce padding for the image wrapper */
+        border-radius: 5px; /* Reduce the rounding further */
+    }
+}
+
+
+.credit-card-image-wrapper img {
+    display: block;
+    max-width: 100%; /* Ensures image fits within the container */
+    border-radius: 5px; /* Optional: additional rounding for the image itself */
+}
+  .credit-card-image {
+    width: 90%;
+    max-width: 90%;
+    display: block;
+    margin: 0 auto 15px;
+  }
+  
+  .card-inputs input {
+    display: block;
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .card-inputs input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+  }
+/* CSS สำหรับข้อความผิดพลาดบัตรเครดิต */
+#error-credit-card-message,
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+    white-space: pre-line;
+    padding: 10px;
+    border: 1px solid red; /* Add red border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #ffe6e6; /* Light red background */
+    transition: background-color 0.3s, border-color 0.3s; /* Smooth transition */
+}
+
+/* Hover effect for both */
+#error-credit-card-message:hover,
+.error-message:hover {
+    background-color: #ffcccc; /* Darker red background on hover */
+    border-color: darkred; /* Darker red border on hover */
+}
+
+  
+  /* Payment actions buttons */
+  .payment-actions {
+    text-align: center;
+  }
+  
+  .payment-actions button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin: 0 10px;
+  }
+  
+  .payment-actions button:hover {
+    opacity: 0.8;
+  }
+  
+  .payment-actions button:first-of-type {
+    background: linear-gradient(135deg, #0080ff, #00c2ff); /* Match blue gradient background */
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    margin: 10px;
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+    box-shadow: 0 4px 8px rgba(0, 128, 255, 0.5); /* Blue shadow for depth */
+  }
+  
+  .payment-actions button:first-of-type:hover {
+    background: linear-gradient(135deg, #00c2ff, #0080ff); /* Inverted gradient on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 6px 12px rgba(0, 128, 255, 0.7); /* Enhance shadow on hover */
+  }
+  
+  .payment-actions button:first-of-type:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 0 3px rgba(0, 128, 255, 0.3); /* Focus ring effect */
+  }
+  
+  
+  
+  .payment-actions button:last-of-type {
+    background: linear-gradient(135deg, #ff7c7c, #ff2f2f); /* Match the gradient style */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transition for hover effects */
+  }
+  
+  .payment-actions button:last-of-type:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 6px 12px rgba(255, 0, 0, 0.7); /* Enhance shadow on hover */
+  }
+  
+  .payment-actions button:last-of-type:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 0 3px rgba(255, 0, 0, 0.3); /* Focus ring effect */
+  }
+  
+  .payment-actions button:first-of-type:hover {
+    background: linear-gradient(135deg, #00c2ff, #0080ff); /* Inverted gradient on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 6px 12px rgba(0, 128, 255, 0.7); /* Enhance shadow on hover */
+  }
+  .payment-actions button:last-of-type:hover {
+    background: linear-gradient(135deg, #ff7c7c, #ff2f2f); /* Inverted red gradient on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 6px 12px rgba(255, 0, 0, 0.7); /* Enhance red shadow on hover */
+  }
+  
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .payment-container {
+      padding: 15px;
+    }
+  
+    .show-options,
+    .payment-actions button {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .credit-card-image {
+      max-width: 100%;
+    }
+  }
+
+  
+  .cash-section p {
+    margin: 0; /* ลบ margin ของ <p> */
+    font-size: 16px; /* ขนาดฟอนต์ */
+  }
+  .general-error-message {
+    color: red;
+    text-align: center;
+    border: 1px solid red; /* Red border */
+    padding: 10px;
+    margin: 20px auto; /* Center horizontally */
+    max-width: 300px; /* Optional: limit width */
+    border-radius: 5px; /* Optional: rounded corners */
+    background-color: #ffe6e6; /* Light red background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow */
+    transition: background-color 0.3s, border-color 0.3s; /* Smooth transition */
+}
+
+.general-error-message:hover {
+    background-color: #ffcccc; /* Darker red background on hover */
+    border-color: darkred; /* Darker border on hover */
+}
+.truemoney-section, .alipay-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px; /* Adjust as needed */
+  }
+  
+  .aa, .cc {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .aa, .cc {
+    width: 300px; /* Set a fixed width for the images */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+    margin-top: 10px; /* Add space above the images */
+  }
+  
+  .aa:hover, .cc:hover {
+    transform: scale(1.1); /* Slightly enlarge the image on hover */
+  }
+  .bb,.dd{
+    font-size: 15px;
+  margin-bottom: 10px;
+  padding: 10px; /* Add padding inside the border */
+  border: 2px solid lightblue; /* Add a light blue border */
+  border-radius: 8px; /* Optional: Add rounded corners */
+  background-color: #f0f8ff; /* Optional: Add a light blue background */
+}
+  

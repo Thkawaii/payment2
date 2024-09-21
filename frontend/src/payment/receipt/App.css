@@ -1,0 +1,97 @@
+/* Receipt Table */
+.receipt-table {
+  width: 100%;
+  border-collapse: collapse; /* Ensures borders are collapsed into a single border */
+  margin-top: 20px; /* Adds space above the table */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+  border-radius: 8px; /* Rounds the corners of the table */
+}
+
+.receipt-table th, .receipt-table td {
+  border: 1px solid #ddd; /* Light gray border for cells */
+  padding: 12px; /* Padding inside table cells */
+  text-align: left; /* Align text to the left */
+}
+
+.receipt-table th {
+  background-color: #0085FF; /* Bright blue background for headers */
+  color: #ffffff; /* White text color for headers */
+  font-weight: bold; /* Bold text for headers */
+  border: none; /* Remove borders to ensure header cells connect smoothly */
+}
+
+.receipt-table th:first-child {
+  border-top-left-radius: 8px; /* Top-left corner rounded */
+}
+
+.receipt-table th:last-child {
+  border-top-right-radius: 8px; /* Top-right corner rounded */
+}
+
+.receipt-table tr:last-child td:first-child {
+  border-bottom-left-radius: 8px; /* Bottom-left corner rounded */
+}
+
+.receipt-table tr:last-child td:last-child {
+  border-bottom-right-radius: 8px; /* Bottom-right corner rounded */
+}
+
+.receipt-table td {
+  color: #333; /* Darker text color for table content */
+  background-color: #f9f9f9; /* Light gray background for table rows */
+}
+
+.receipt-table tr:nth-child(even) {
+  background-color: #f1f1f1; /* Alternating row background color */
+}
+
+.receipt-table tr:hover {
+  background-color: #e0f7ff; /* Highlight row on hover */
+}
+
+/* Receipt Header */
+.receipt-header {
+  padding: 20px; /* Add padding for spacing */
+  border-bottom: 2px solid #ddd; /* Bottom border for separation */
+  background-color: #0085FF; /* Bright blue background color */
+  color: #ffffff; /* White text color */
+  font-weight: bold; /* Bold text */
+  position: relative; /* Allows for positioning pseudo-elements */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  text-align: center; /* Center text */
+  border-top-left-radius: 8px; /* Top-left corner rounded */
+  border-top-right-radius: 8px; /* Top-right corner rounded */
+  margin-bottom: 20px; /* Adds space below the header */
+}
+
+.receipt-header h1 {
+  font-size: 26px; /* Slightly larger font size */
+  color: white; /* White text color */
+  margin: 0;
+  padding: 0; /* Remove extra padding */
+  font-weight: bold;
+}
+
+.receipt-header::after {
+  content: '|';
+  position: absolute;
+  right: 16px; /* Adjusted for better spacing */
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ffffff; /* Ensure the color matches the text color */
+  font-size: 1.2em;
+  opacity: 0.7; /* Slight transparency for a softer look */
+}
+
+/* Receipt Total Section */
+.receipt-total {
+  margin-top: 20px;
+  text-align: right; /* Align total section to the right */
+  font-size: 18px;
+  font-weight: bold;
+  color: #333; /* Darker text color */
+}
+
+.receipt-total span {
+  color: #0085FF; /* Highlighted color for total amount */
+}
